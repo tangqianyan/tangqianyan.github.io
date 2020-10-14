@@ -1,5 +1,5 @@
 = 文章列表 =
-* [[First]]
+* [[Knowledge Points]]
 * Two
 * Third
 
