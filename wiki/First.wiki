@@ -1,4 +1,5 @@
 = Knowledge Points =
 
 * [[Mututal Information]]
+* [[Fitness Function]]
 
