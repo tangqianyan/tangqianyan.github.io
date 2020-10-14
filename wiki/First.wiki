@@ -1,1 +1,4 @@
-# First Title
+= Knowledge Points =
+
+* [[互信息]]
+
