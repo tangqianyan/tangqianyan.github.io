@@ -1,0 +1,44 @@
+= Gene Expression Programming =
+
+compare between
+
+- 遗传算法 (Genetic Algorithm, GA) 是计算数学中用于解决最优化的搜索算法，是进化算法的一种。
+- 遗传编程 (Genetic Programming, GP)  
+- 基因表达式编程 (Gene Expression Programming, GEP) 是一种自适应的演化算法。
+
+区别
+GEP、GA和GP的差别表现在遗传物质的编码方式上。
+
+- GA的编码-线性串
+GA编码简单，适合计算机处理，但语义不丰富。是简单编码解决简单问题。
+
+- GP的编码-树结构
+与GA相比，GP采用了复杂的树结构，可以表达复杂的语义，是复杂编码解决复杂问题。
+
+- GEP的编码
+同时结合GA和GP的优点，使得计算效率更高。
+
+
+GA和GP编码下效率太低
+
+
+
+
+=== The basic gene expression algorithm ===
+1. Select function set;
+2. select terminal set;
+3. Load dataset for fitness function;
+4. Create chromosomes of initial population randomly;
+5. For each program in population:
+    a) Express chromosome;
+    b) Execute program;
+    c) Evaluate fitness;
+6. Verify stop condition;
+7. Select programs;
+8. Replicate selected programs to form the next population;
+9. Modify chromosomes using genetic operators;
+10. Go to step 5.
+
+=== The GEP-RNC algorithm ===
+
+

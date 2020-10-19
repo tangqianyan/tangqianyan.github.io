@@ -2,4 +2,6 @@
 
 * [[Mututal Information]]
 * [[Fitness Function]]
+* [[Gene Expression programming]]
+*
 
