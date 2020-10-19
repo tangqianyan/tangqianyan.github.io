@@ -10,19 +10,28 @@ compare between
 GEP、GA和GP的差别表现在遗传物质的编码方式上。
 
 - GA的编码-线性串
-GA编码简单，适合计算机处理，但语义不丰富。是简单编码解决简单问题。
+GA定长编码，编码简单，适合计算机处理，但语义不丰富。是简单编码解决简单问题。
 
 - GP的编码-树结构
 与GA相比，GP采用了复杂的树结构，可以表达复杂的语义，是复杂编码解决复杂问题。
 
 - GEP的编码
-同时结合GA和GP的优点，使得计算效率更高。
+定长编码，解码结果是树的表达形式。同时结合GA和GP的优点，使得计算效率更高。
+
+*The Defination of Gene in GEP*:
+
+设$F$为函数符号集(运算符或其它初等函数)，$T$为终端符号集(变量或常量)。基因表达式形如$a_1,a_2,\cdots,a_h,b1,\cdots,b_t$的串表达式，其中$a_i\in F,b_j\in T, t=h(n-1)+1$，其中$n$为运算符或其他初等函数的最大操作目数。
 
 
-GA和GP编码下效率太低
-
-
-
+===操作函数===
+- Select：选择函数；
+- Replication: 复制操作；
+- Mutation: 变异操作；
+- IS Transposition: IS插串；
+- RIS Transposition: RIS插串；
+- Gene Transposition: Gene 插串；
+- One-Point Recombination: 1－点重组;
+- Two-Point Recombination: 2－点重组；
 
 === The basic gene expression algorithm ===
 1. Select function set;
@@ -40,5 +49,5 @@ GA和GP编码下效率太低
 10. Go to step 5.
 
 === The GEP-RNC algorithm ===
-
-
+参考链接：
+1. http://blog.sciencenet.cn/blog-287179-537914.html
