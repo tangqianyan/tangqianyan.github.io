@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="Stylesheet" type="text/css" href="style.css">
+<title>Gaussian Distribution</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<body>
+
+<div id="Gaussian Distribution"><h1 id="Gaussian Distribution" class="header"><a href="#Gaussian Distribution">Gaussian Distribution</a></h1></div>
+
+<p>
+转载自：<a href="https://zhuanlan.zhihu.com/p/36522776">https://zhuanlan.zhihu.com/p/36522776</a>
+</p>
+
+<div id="Gaussian Distribution-一元高斯分布"><h2 id="一元高斯分布" class="header"><a href="#Gaussian Distribution-一元高斯分布">一元高斯分布</a></h2></div>
+<p>
+均值为0，方差为1的一元正态分布，其概率密度函数为:
+</p>
+
+\[
+f(x)=\frac{1}{\sqrt{2\pi}}e^{-\frac{x^2}{2}}
+\]
+
+<p>
+当均值为\(\mu\)，方差为\(\sigma^2\)的情况下，需要对数据进行标准化。标准化的意义在于将数据点\(x\)到均值\(\mu\)的距离转化为等于多少个总体的标准差\(\sigma\)。这样就消除了数据分布差异和量纲对概率计算的影响，此时的概率密度为:
+</p>
+
+\[
+f(x)=\frac{1}{\sqrt{2\pi}e}e^{-\frac{z^2}{2}}=\frac{1}{\sqrt{2\pi}e}e^{-\frac{(x-\mu)^2}{2\sigma^2}}
+\]
+
+<p>
+这是高斯分布的核心步骤。
+</p>
+
+<div id="Gaussian Distribution-多元高斯分布"><h2 id="多元高斯分布" class="header"><a href="#Gaussian Distribution-多元高斯分布">多元高斯分布</a></h2></div>
+
+<div id="Gaussian Distribution-多元高斯分布-各维度不相关"><h3 id="各维度不相关" class="header"><a href="#Gaussian Distribution-多元高斯分布-各维度不相关">各维度不相关</a></h3></div>
+<p>
+数据点通过列向量\(x=[x_1,\cdots,x_d]^T\)表示，各维度的均值和方差可以表示为\(\mu_1,\cdots,\mu_d\)和\(\sigma_1,\cdots,\sigma_d\)表示，则对应的高斯分布可以表示为:
+</p>
+
+\[
+f(x)=\frac{1}{(\sqrt{2\pi})^d \sigma_1 \sigma_2\cdots\sigma_d}e^{-\frac{1}{2}[(\frac{(x_1-\mu_1)}{\sigma_1})^2+\cdots+(\frac{x_d-\mu_d}{\sigma_d})^2]}
+\]
+<p>
+该方程可以转换为下面的形式:
+</p>
+\[
+f(x)=\frac{1}{(\sqrt{2 \pi}) \sigma_{1}} e^{-\frac{1}{2}\left(\frac{x_{1}-\mu_{1}}{\sigma_{1}}\right)^{2}} \frac{1}{(\sqrt{2 \pi}) \sigma_{2}} e^{-\frac{1}{2}\left(\frac{x_{2}-\mu_{2}}{\sigma_{2}}\right)^{2}} \cdots \frac{1}{(\sqrt{2 \pi}) \sigma_{d}} e^{-\frac{1}{2}\left(\frac{x_{d}-\mu_{d}}{\sigma_{d}}\right)^{2}}
+\]
+<p>
+这样，各个维度不相关的多元正态分布概率密度函数实际上是各个维度概率密度函数的乘积。这是因为各个变量之间不相关，因此联合概率密度函数等于各自概率密度的乘积。
+</p>
+
+\[
+d^{2}(x, \mu)=\left(\frac{x_{1}-\mu_{1}}{\sigma_{1}}\right)^{2}+\left(\frac{x_{2}-\mu_{2}}{\sigma_{2}}\right)^{2}+\cdots+\left(\frac{x_{d}-\mu_{1}}{\sigma_{d}}\right)^{2}
+\]
+
+\[
+=\left[x_{1}-\mu_{1}, x_{2}-\mu_{2}, \cdots, x_{d}-\mu_{d}\right]\left[\begin{array}{cccc}
+\frac{1}{\sigma_{1}^{2}} &amp; 0 &amp; \cdots &amp; 0 \\
+0 &amp; \frac{1}{\sigma_{2}^{2}} &amp; \cdots &amp; 0 \\
+\vdots &amp; \vdots &amp; \ddots &amp; \vdots \\
+0 &amp; 0 &amp; \cdots &amp; \frac{1}{\sigma_{d}^{2}}
+\end{array}\right]\left[\begin{array}{c}
+x_{1}-\mu_{1} \\
+x_{2}-\mu_{2} \\
+\vdots \\
+x_{d}-\mu_{d}
+\end{array}\right]
+\]
+
+\[
+=(X-\mu)^{T} \Sigma^{-1}(X-\mu)
+\]
+
+
+\[
+\begin{aligned}
+f(x)&amp;= \frac{1}{(\sqrt{2 \pi})^{d}\left(\sigma_{1} \sigma_{2} \cdots \sigma_{d}\right)} \exp \left(-\frac{1}{2} d(x, \mu)^{2}\right) \\
+&amp;=\frac{1}{(2 \pi)^{\frac{d}{2}}|\Sigma|^{\frac{1}{2}}} e^{-\frac{1}{2}(X-\mu)^{T} \Sigma^{-1}(X-\mu)}
+\end{aligned}
+\]
+
+
+
+
+
+
+<br />
+<br />
+
+<!--<div id="div1" style="width:90%; position:fixed; bottom:0px;background-color: white;">--!>
+<div id="div1" style="width:90%; position:fixed; bottom:0px;">
+<!--<HR style="FILTER: progid:DXImageTransform.Microsoft.Shadow(color:#987cb9,direction:145,strength:15)" width="50%" color=#987cb9 SIZE=1>
+--!>
+<div style="text-align: center;"> 
+    <font color="#D8D5D4">
+        Copyright ©  Curtis Xiao
+    </font>
+    </div>
+<br />
+</div>
+</body>
+</html>

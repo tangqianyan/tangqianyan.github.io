@@ -32,6 +32,13 @@ GA定长编码，编码简单，适合计算机处理，但语义不丰富。是
 - One-Point Recombination: 1－点重组;
 - Two-Point Recombination: 2－点重组；
 
+
+基因是g染色体的基本构成单位。
+
+在GEP中，有两个主体：染色体和表达式树。从染色体到表达式树的解码过程称为翻译。
+在GEP中，基因组或者染色体是一个固定长度的符号串。
+
+
 === The basic gene expression algorithm ===
 1. Select function set;
 2. select terminal set;

@@ -1,0 +1,64 @@
+= Gaussian Distribution =
+
+转载自：https://zhuanlan.zhihu.com/p/36522776
+
+==一元高斯分布==
+均值为0，方差为1的一元正态分布，其概率密度函数为:
+
+{{$
+f(x)=\frac{1}{\sqrt{2\pi}}e^{-\frac{x^2}{2}}
+}}$
+
+当均值为$\mu$，方差为$\sigma^2$的情况下，需要对数据进行标准化。标准化的意义在于将数据点$x$到均值$\mu$的距离转化为等于多少个总体的标准差$\sigma$。这样就消除了数据分布差异和量纲对概率计算的影响，此时的概率密度为:
+
+{{$
+f(x)=\frac{1}{\sqrt{2\pi}e}e^{-\frac{z^2}{2}}=\frac{1}{\sqrt{2\pi}e}e^{-\frac{(x-\mu)^2}{2\sigma^2}}
+}}$
+
+这是高斯分布的核心步骤。
+
+==多元高斯分布==
+
+===各维度不相关===
+数据点通过列向量$x=[x_1,\cdots,x_d]^T$表示，各维度的均值和方差可以表示为$\mu_1,\cdots,\mu_d$和$\sigma_1,\cdots,\sigma_d$表示，则对应的高斯分布可以表示为:
+
+{{$
+f(x)=\frac{1}{(\sqrt{2\pi})^d \sigma_1 \sigma_2\cdots\sigma_d}e^{-\frac{1}{2}[(\frac{(x_1-\mu_1)}{\sigma_1})^2+\cdots+(\frac{x_d-\mu_d}{\sigma_d})^2]}
+}}$
+该方程可以转换为下面的形式:
+{{$
+f(x)=\frac{1}{(\sqrt{2 \pi}) \sigma_{1}} e^{-\frac{1}{2}\left(\frac{x_{1}-\mu_{1}}{\sigma_{1}}\right)^{2}} \frac{1}{(\sqrt{2 \pi}) \sigma_{2}} e^{-\frac{1}{2}\left(\frac{x_{2}-\mu_{2}}{\sigma_{2}}\right)^{2}} \cdots \frac{1}{(\sqrt{2 \pi}) \sigma_{d}} e^{-\frac{1}{2}\left(\frac{x_{d}-\mu_{d}}{\sigma_{d}}\right)^{2}}
+}}$
+这样，各个维度不相关的多元正态分布概率密度函数实际上是各个维度概率密度函数的乘积。这是因为各个变量之间不相关，因此联合概率密度函数等于各自概率密度的乘积。
+
+{{$
+d^{2}(x, \mu)=\left(\frac{x_{1}-\mu_{1}}{\sigma_{1}}\right)^{2}+\left(\frac{x_{2}-\mu_{2}}{\sigma_{2}}\right)^{2}+\cdots+\left(\frac{x_{d}-\mu_{1}}{\sigma_{d}}\right)^{2}
+}}$
+
+{{$
+=\left[x_{1}-\mu_{1}, x_{2}-\mu_{2}, \cdots, x_{d}-\mu_{d}\right]\left[\begin{array}{cccc}
+\frac{1}{\sigma_{1}^{2}} & 0 & \cdots & 0 \\
+0 & \frac{1}{\sigma_{2}^{2}} & \cdots & 0 \\
+\vdots & \vdots & \ddots & \vdots \\
+0 & 0 & \cdots & \frac{1}{\sigma_{d}^{2}}
+\end{array}\right]\left[\begin{array}{c}
+x_{1}-\mu_{1} \\
+x_{2}-\mu_{2} \\
+\vdots \\
+x_{d}-\mu_{d}
+\end{array}\right]
+}}$
+
+{{$
+=(X-\mu)^{T} \Sigma^{-1}(X-\mu)
+}}$
+
+
+{{$
+\begin{aligned}
+f(x)&= \frac{1}{(\sqrt{2 \pi})^{d}\left(\sigma_{1} \sigma_{2} \cdots \sigma_{d}\right)} \exp \left(-\frac{1}{2} d(x, \mu)^{2}\right) \\
+&=\frac{1}{(2 \pi)^{\frac{d}{2}}|\Sigma|^{\frac{1}{2}}} e^{-\frac{1}{2}(X-\mu)^{T} \Sigma^{-1}(X-\mu)}
+\end{aligned}
+}}$
+
+
