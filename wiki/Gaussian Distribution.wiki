@@ -61,4 +61,5 @@ f(x)&= \frac{1}{(\sqrt{2 \pi})^{d}\left(\sigma_{1} \sigma_{2} \cdots \sigma_{d}\
 \end{aligned}
 }}$
 
+===各维度相关===
 
