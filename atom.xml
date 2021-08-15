@@ -6,7 +6,7 @@
   <link href="https://tangqianyan.github.io/atom.xml" rel="self"/>
   
   <link href="https://tangqianyan.github.io/"/>
-  <updated>2021-08-15T14:57:38.643Z</updated>
+  <updated>2021-08-15T15:05:52.714Z</updated>
   <id>https://tangqianyan.github.io/</id>
   
   <author>
@@ -21,9 +21,9 @@
     <link href="https://tangqianyan.github.io/2021/08/15/save-data/"/>
     <id>https://tangqianyan.github.io/2021/08/15/save-data/</id>
     <published>2021-08-15T13:55:34.000Z</published>
-    <updated>2021-08-15T14:57:38.643Z</updated>
+    <updated>2021-08-15T15:05:52.714Z</updated>
     
-    <content type="html"><![CDATA[<p>测试了 <em>fether, parquet, pickle, hdf, csv</em> 五种格式在读取、存储所需的时间，以及占用的磁盘大小；</p><h3 id="读取文件耗时"><a href="#读取文件耗时" class="headerlink" title="读取文件耗时"></a>读取文件耗时</h3><div style="width:30%;margin:auto"><img src="/images/read.png" class="[table]" title="title text alt text"></div><h3 id="存储文件耗时"><a href="#存储文件耗时" class="headerlink" title="存储文件耗时"></a>存储文件耗时</h3><div style="width:30%;margin:auto"><img src="/images/write.png" class="[table]" title="title text alt text"></div><h3 id="占用硬盘大小"><a href="#占用硬盘大小" class="headerlink" title="占用硬盘大小"></a>占用硬盘大小</h3><div style="width:30%;margin:auto"><img src="/images/cost_size.png" class="[table]" title="title text alt text"></div><h3 id="结论"><a href="#结论" class="headerlink" title="结论"></a>结论</h3><p>可以看出 feather 格式在读取速度、存储速度以及存储大小方面占据优势。</p><p>参考链接：</p><ul><li><a href="https://towardsdatascience.com/">The Best Format to Save Pandas Data</a>the-best-format-to-save-pandas-data-414dca023e0d</li><li><a href="https://stackoverflow.com/questions/48083405/what-are-the-differences-between-feather-and-parquet">What are the differences between feather and parquet?</a></li></ul>]]></content>
+    <content type="html"><![CDATA[<p>测试了 <em>fether, parquet, pickle, hdf, csv</em> 五种格式在读取、存储所需的时间，以及占用的磁盘大小；</p><h3 id="读取文件耗时"><a href="#读取文件耗时" class="headerlink" title="读取文件耗时"></a>读取文件耗时</h3><div style="width:30%;margin:auto"><img src="/images/read.png" class="[table]" title="title text alt text"></div><h3 id="存储文件耗时"><a href="#存储文件耗时" class="headerlink" title="存储文件耗时"></a>存储文件耗时</h3><div style="width:30%;margin:auto"><img src="/images/write.png" class="[table]" title="title text alt text"></div><h3 id="占用硬盘大小"><a href="#占用硬盘大小" class="headerlink" title="占用硬盘大小"></a>占用硬盘大小</h3><div style="width:30%;margin:auto"><img src="/images/cost_size.png" class="[table]" title="title text alt text"></div><h3 id="结论"><a href="#结论" class="headerlink" title="结论"></a>结论</h3><p>可以看出 feather 格式在读取速度、存储速度以及存储大小方面占据优势。</p><p>参考链接：</p><ul><li><a href="https://towardsdatascience.com/the-best-format-to-save-pandas-data-414dca023e0d">The Best Format to Save Pandas Data</a></li><li><a href="https://stackoverflow.com/questions/48083405/what-are-the-differences-between-feather-and-parquet">What are the differences between feather and parquet?</a></li></ul>]]></content>
     
     
       
