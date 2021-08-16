@@ -6,7 +6,7 @@
   <link href="https://tangqianyan.github.io/atom.xml" rel="self"/>
   
   <link href="https://tangqianyan.github.io/"/>
-  <updated>2021-08-15T15:05:52.714Z</updated>
+  <updated>2021-08-16T15:39:35.860Z</updated>
   <id>https://tangqianyan.github.io/</id>
   
   <author>
@@ -15,6 +15,55 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>运动记录</title>
+    <link href="https://tangqianyan.github.io/2021/08/16/%E8%BF%90%E5%8A%A8%E8%AE%B0%E5%BD%95/"/>
+    <id>https://tangqianyan.github.io/2021/08/16/%E8%BF%90%E5%8A%A8%E8%AE%B0%E5%BD%95/</id>
+    <published>2021-08-16T15:37:19.000Z</published>
+    <updated>2021-08-16T15:39:35.860Z</updated>
+    
+    <content type="html"><![CDATA[<div class="table", style="width:30%;margin:auto"><table><thead><tr><th style="text-align:center">日期</th><th style="text-align:center">俯卧撑</th><th style="text-align:center">深蹲</th></tr></thead><tbody><tr><td style="text-align:center">2021-08-15</td><td style="text-align:center">3</td><td style="text-align:center">3</td></tr><tr><td style="text-align:center">2021-08-16</td><td style="text-align:center">3</td><td style="text-align:center">3</td></tr></tbody></table></div>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;div class=&quot;table&quot;, style=&quot;width:30%;margin:auto&quot;&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&quot;text-align:center&quot;&gt;日期&lt;/th&gt;
+&lt;th style=&quot;text-align:center&quot;&gt;</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>量化文章</title>
+    <link href="https://tangqianyan.github.io/2021/08/16/%E9%87%8F%E5%8C%96%E6%96%87%E7%AB%A0/"/>
+    <id>https://tangqianyan.github.io/2021/08/16/%E9%87%8F%E5%8C%96%E6%96%87%E7%AB%A0/</id>
+    <published>2021-08-16T06:13:30.000Z</published>
+    <updated>2021-08-16T09:28:20.527Z</updated>
+    
+    <content type="html"><![CDATA[<p>收录了一些量化相关的文章：</p><h2 id="量化历史类"><a href="#量化历史类" class="headerlink" title="量化历史类"></a>量化历史类</h2><ul><li><a href="https://mp.weixin.qq.com/s/VPrtXh-M2Sf8osNCDLFrPg">量化投资发展史：野蛮、乱象、科学</a></li><li><a href="https://www.ylcf.com.cn/simu/zx/144.html">四大私募量化策略解析——阿尔法、套利、期货CTA、高频交易</a></li></ul>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;收录了一些量化相关的文章：&lt;/p&gt;
+&lt;h2 id=&quot;量化历史类&quot;&gt;&lt;a href=&quot;#量化历史类&quot; class=&quot;headerlink&quot; title=&quot;量化历史类&quot;&gt;&lt;/a&gt;量化历史类&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://mp.weixin.qq.c</summary>
+      
+    
+    
+    
+    
+    <category term="Quant" scheme="https://tangqianyan.github.io/tags/Quant/"/>
+    
+  </entry>
   
   <entry>
     <title>Python 存储 DataFrame 格式对比</title>
