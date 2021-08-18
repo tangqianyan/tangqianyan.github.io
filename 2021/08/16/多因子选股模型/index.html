@@ -8,7 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
   <meta name="color-scheme" content="light dark">
   
-  <title>多因子选股模型 - 静渊</title>
+  <title>多因子选股模型之因子分类 - 静渊</title>
   
     <link rel="shortcut icon" href="/favicon.png">
   
@@ -116,83 +116,78 @@
         </div>
         
 
-        <h2 class="title">多因子选股模型</h2>
+        <h2 class="title">多因子选股模型之因子分类</h2>
     </div>
 
     <div class="divider"></div>
 
     <div class="content">
-        <h2 id="因子分类"><a class="markdownIt-Anchor" href="#因子分类"></a> 因子分类</h2>
-<h3 id="估值类因子"><a class="markdownIt-Anchor" href="#估值类因子"></a> 估值类因子</h3>
-<p>估值类因子能较好的反应股票的内在价值。通常来说，估值较低的股票相比估值较高的因子有更好的预期收益率。常用的指标有</p>
+        <h2 id="因子分类"><a href="#因子分类" class="headerlink" title="因子分类"></a>因子分类</h2><h3 id="估值类因子"><a href="#估值类因子" class="headerlink" title="估值类因子"></a>估值类因子</h3><p>估值类因子能较好的反应股票的内在价值。通常来说，估值较低的股票相比估值较高的因子有更好的预期收益率。常用的指标有</p>
 <ul>
 <li>PE (Price-Earning Ratio): 市盈率</li>
 </ul>
-PE = \frac{每股市场价格}{每股每年盈利}
-
-<ul>
+<script type="math/tex; mode=display">
+PE = \frac{每股市场价格}{每股每年盈利}</script><ul>
 <li>PB (Price-to-Book Ratio)：市净率</li>
 </ul>
-PB = \frac{市值}{归母公司净资产}
-
-<ul>
+<script type="math/tex; mode=display">
+PB = \frac{市值}{归母公司净资产}</script><ul>
 <li>PCF (Price-to-Cash-Flow Ratio)：股价现金流比率</li>
 </ul>
-PCF = \frac{每股股价}{每股现金流}
-
-<ul>
+<script type="math/tex; mode=display">
+PCF = \frac{每股股价}{每股现金流}</script><ul>
 <li>PSR (Price-Sales Ratio)：股价销售额比率，市销率或称市值营收比</li>
 </ul>
-PSR = \frac{股价}{盈利收入}
-
-<h3 id="成长类因子"><a class="markdownIt-Anchor" href="#成长类因子"></a> 成长类因子</h3>
-<p>成长类因子主要反映公司未来的成长。改因子和未来预期收益较为相关。</p>
+<script type="math/tex; mode=display">
+PSR = \frac{股价}{盈利收入}</script><h3 id="成长类因子"><a href="#成长类因子" class="headerlink" title="成长类因子"></a>成长类因子</h3><p>成长类因子主要反映公司未来的成长。改因子和未来预期收益较为相关。</p>
 <ul>
 <li>NPG (Net Profit Growth)：净利润增长率，净利润增长率代表企业当期净利润比上期净利润的增长幅度；</li>
 </ul>
-NPG = \frac{报告期净利润-基期净利润}{基期净利润}
-
-<ul>
+<script type="math/tex; mode=display">
+NPG = \frac{报告期净利润-基期净利润}{基期净利润}</script><ul>
 <li>EPS (Earnings Per Share)：每股盈余，普通股每股税后利润。</li>
 </ul>
-EPS = \frac{盈余}{流通在外的股数}
-
-<ul>
+<script type="math/tex; mode=display">
+EPS = \frac{盈余}{流通在外的股数}</script><ul>
 <li>ROA (Return on Assert)：资产回报率</li>
 </ul>
-ROA = \frac{税后净利润}{总资产}
-
-<ul>
+<script type="math/tex; mode=display">
+ROA = \frac{税后净利润}{总资产}</script><ul>
 <li>ROE (Return on Equity)：净资产收益率</li>
 </ul>
-ROE = \frac{净利润}{净资产}
-
-<h3 id="盈利类因子"><a class="markdownIt-Anchor" href="#盈利类因子"></a> 盈利类因子</h3>
-<p>盈利类因子指通过已有资源获取利润的能力，通常衡量企业的管理和发展能力。</p>
+<script type="math/tex; mode=display">
+ROE = \frac{净利润}{净资产}</script><h3 id="盈利类因子"><a href="#盈利类因子" class="headerlink" title="盈利类因子"></a>盈利类因子</h3><p>盈利类因子指通过已有资源获取利润的能力，通常衡量企业的管理和发展能力。</p>
 <ul>
 <li>ROE</li>
 <li>ROA</li>
 <li>ROIC (Return on Invested Capital)：资产回报率</li>
 </ul>
-ROIC = \frac{息前税后利润}{投入资本}
-
-<ul>
+<script type="math/tex; mode=display">
+ROIC = \frac{息前税后利润}{投入资本}</script><ul>
 <li>TAT (Total Asset Turnover)：总资产周转率</li>
 </ul>
-TAT = \frac{销售额}{总资产}
-
-<h3 id="投资类因子"><a class="markdownIt-Anchor" href="#投资类因子"></a> 投资类因子</h3>
-<p>投资类因子主要衡量因子的发展情况。</p>
-<h3 id="资本结构类"><a class="markdownIt-Anchor" href="#资本结构类"></a> 资本结构类</h3>
-<p>待定。</p>
-<h3 id="技术类因子"><a class="markdownIt-Anchor" href="#技术类因子"></a> 技术类因子</h3>
-<p>通过价量数据来反映股价的变化情况。</p>
-<h2 id="候选因子选择"><a class="markdownIt-Anchor" href="#候选因子选择"></a> 候选因子选择</h2>
-<p>选择候选因子的几个原则：</p>
+<script type="math/tex; mode=display">
+TAT = \frac{销售额}{总资产}</script><h3 id="投资类因子"><a href="#投资类因子" class="headerlink" title="投资类因子"></a>投资类因子</h3><p>投资类因子主要衡量因子的发展情况。</p>
 <ul>
-<li>普适性；</li>
-<li>分辨性；</li>
+<li>Total Market Capitaliztion 股票市值</li>
+<li>Asset Liability Ratio 资产负债比率</li>
 </ul>
+<script type="math/tex; mode=display">
+ALR = \frac{Total\ Labilities}{Net\ Assets}</script><ul>
+<li>Fixed Assets Ratio</li>
+</ul>
+<script type="math/tex; mode=display">
+FAR = \frac{Fixed\ Assets}{Total\ Assets}</script><h3 id="技术类因子"><a href="#技术类因子" class="headerlink" title="技术类因子"></a>技术类因子</h3><p>通过价量数据来反映股价的变化情况。这类因子很多。</p>
+<h2 id="数据处理的问题"><a href="#数据处理的问题" class="headerlink" title="数据处理的问题"></a>数据处理的问题</h2><p>行业中性化主要是为了解决不同行业，指标差异较大的问题。行业中性化有以下几种方法：</p>
+<ul>
+<li>因子值减去行业均值再除以行业因子方差，有点类似于数据标准化：</li>
+</ul>
+<script type="math/tex; mode=display">
+Industry\ Neutralized\ Factor = \frac{Factor- Average_{industry}}{Std_{industry}}</script><p>参考文献：</p>
+<ol>
+<li>多因子选股策略及其在中国股票市场的研究；</li>
+<li>因子投资-方法与实践；</li>
+</ol>
 
     </div>
 
@@ -286,7 +281,7 @@ TAT = \frac{销售额}{总资产}
     var disqus_config = function() {
       this.page.url = 'https://tangqianyan.github.io/2021/08/16/%E5%A4%9A%E5%9B%A0%E5%AD%90%E9%80%89%E8%82%A1%E6%A8%A1%E5%9E%8B/';
       this.page.identifier = '2021/08/16/多因子选股模型/';
-      this.page.title = '多因子选股模型';
+      this.page.title = '多因子选股模型之因子分类';
     };
     (function() {
       var dsq = document.createElement('script');
